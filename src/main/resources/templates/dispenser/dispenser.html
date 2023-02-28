@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/layout :: head"></head>
+
+<body id="page-top">
+	<!-- Header -->
+	<header th:replace="layout/layout :: header"></header>
+	<!-- Depositos -->
+	<section class="page-section bg-light" id="team">
+		<div class="container">
+			<div class="text-center">
+				<h2 class="section-heading text-uppercase">Equipo de desarrollo</h2>
+				<h3 class="section-subheading text-muted">Esta aplicación fue
+					desarrollada por el equipo FBI de ATM, Agentes y autoservicios.</h3>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="team-member">
+						<img class="mx-auto rounded-circle"
+							src="assets/img/team/usuario.png" alt="..." />
+						<h4>Renzo Rojas</h4>
+						<p class="text-muted">Líder del equipo</p>
+						<a class="btn btn-dark btn-social mx-2"
+							href="mailto:renzo.rojas.marquez@bbva.com"
+							aria-label="Correo de Renzo Rojas"><i class="fa-solid fa-at"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="team-member">
+						<img class="mx-auto rounded-circle"
+							src="assets/img/team/usuario.png" alt="..." />
+						<h4>Eli Tarazona</h4>
+						<p class="text-muted">Desarrollador</p>
+						<a class="btn btn-dark btn-social mx-2"
+							href="mailto:eli.tarazona.contractor@bbva.com"
+							aria-label="Correo de Eli Tarazona"><i class="fa-solid fa-at"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="team-member">
+						<img class="mx-auto rounded-circle"
+							src="assets/img/team/usuario.png" alt="..." />
+						<h4>Rodrigo Serrano</h4>
+						<p class="text-muted">Desarrollador</p>
+						<a class="btn btn-dark btn-social mx-2"
+							href="mailto:rodrigo.serrano.vega.contractor@bbva.com"
+							aria-label="Correo de Rodrigo Serrano"><i
+							class="fa-solid fa-at"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-8 mx-auto text-center">
+					<p class="large text-muted">Cualquier comentario, duda,
+						consulta o mejora contactar con algún miembro del equipo a través
+						de sus correos.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer-->
+	<footer th:replace="layout/layout :: footer"></footer>
+</body>
+
+</html>

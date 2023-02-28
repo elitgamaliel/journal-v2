@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/layout :: head"></head>
+
+<body id="page-top">
+	<!-- Header -->
+	<header th:replace="layout/layout :: header"></header>
+	<!-- Masthead-->
+	<header class="masthead">
+		<div class="container">
+			<div class="masthead-subheading">Aplicación Journal Reader</div>
+			<div class="masthead-heading text-uppercase">Lectura de diarios</div>
+			<a class="btn btn-primary btn-xl text-uppercase" href="#tutorials">¿Como
+				funciona?</a>
+		</div>
+	</header>
+	<!-- Servicios-->
+	<section class="page-section" id="services">
+		<div class="container">
+			<div class="text-center">
+				<h2 class="section-heading text-uppercase">Servicios</h2>
+				<h3 class="section-subheading text-muted">Los servicios que
+					ofrece la aplicación Journal Reader parten de diarios de cajeros
+					que contenga un periodo de remesa especifico.</h3>
+			</div>
+			<div class="row text-center">
+				<div class="col-md-3">
+					<a class="btn" href="deposit/home.html"> <span
+						class="fa-stack fa-4x"> <i
+							class="fas fa-circle fa-stack-2x text-primary"></i> <i
+							class="far fa-arrow-alt-circle-down fa-stack-1x fa-inverse"></i>
+					</span>
+						<h4 class="my-3">Reporte Dispensador</h4>
+					</a>
+					<p class="text-muted">Este servicio te permite un reporte con
+						todas las operaciones realizadas incluyendo us acumulados y otro
+						reporte con todas las operaciones con error. Todo esto en base a
+						diarios de un cajero dispensador.</p>
+				</div>
+				<div class="col-md-3">
+					<a class="btn" href="dispenser/home.html"> <span
+						class="fa-stack fa-4x"> <i
+							class="fas fa-circle fa-stack-2x text-primary"></i> <i
+							class="far fa-arrow-alt-circle-up fa-stack-1x fa-inverse"></i>
+					</span>
+					</a>
+					<h4 class="my-3">Reporte Aceptador</h4>
+					<p class="text-muted">Este servicio te permite un reporte con
+						todas las operaciones realizadas incluyendo us acumulados y otro
+						reporte con todas las operaciones con error. Todo esto en base a
+						diarios de un cajero aceptador.</p>
+				</div>
+				<div class="col-md-3">
+					<a class="btn" href="failedOperations/home.html"> <span
+						class="fa-stack fa-4x"> <i
+							class="fas fa-circle fa-stack-2x text-primary"></i> <i
+							class="fas fa-times fa-stack-1x fa-inverse"></i>
+					</span>
+					</a>
+					<h4 class="my-3">Reportes Operaciones Erroneas</h4>
+					<p class="text-muted">Este servicio te permite obtener un
+						reporte de todas las operaciones con error realizas en un periodo
+						de remesa especifico.</p>
+				</div>
+				<div class="col-md-3">
+					<a class="btn" href="journal"> <span
+						class="fa-stack fa-4x"> <i
+							class="fas fa-circle fa-stack-2x text-primary"></i> <i
+							class="fas fa-times fa-stack-1x fa-inverse"></i>
+					</span>
+					</a>
+					<h4 class="my-3">Reporte Journal Report</h4>
+					<p class="text-muted">Copia funcionalidad Journal Report.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- tutorials Grid-->
+	<section class="page-section bg-light" id="tutorials">
+		<div class="container">
+			<div class="text-center">
+				<h2 class="section-heading text-uppercase">tutorials de uso</h2>
+				<h3 class="section-subheading text-muted">Brindamos videos
+					demostrativos, enseñando como utilizar los servicios de Jorunal
+					Reader</h3>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-sm-6 mb-4">
+					<!-- tutorials item 1-->
+					<div class="tutorials-item">
+						<a class="tutorials-link" data-bs-toggle="modal"
+							href="#tutorialsModal1">
+							<div class="tutorials-hover">
+								<div class="tutorials-hover-content">
+									<i class="fa-solid fa-play fa-3x"></i>
+								</div>
+							</div> <img class="img-fluid"
+							src="assets/img/tutorials/cajeroDispensador.png" alt="..." />
+						</a>
+						<div class="tutorials-caption">
+							<div class="tutorials-caption-heading">Dispensador</div>
+							<div class="tutorials-caption-subheading text-muted">Obtener
+								cuadre contable de cajero dispensador</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 mb-4">
+					<!-- tutorials item 2-->
+					<div class="tutorials-item">
+						<a class="tutorials-link" data-bs-toggle="modal"
+							href="#tutorialsModal2">
+							<div class="tutorials-hover">
+								<div class="tutorials-hover-content">
+									<i class="fas fa-play fa-3x"></i>
+								</div>
+							</div> <img class="img-fluid"
+							src="assets/img/tutorials/cajeroDeposito.png" alt="..." />
+						</a>
+						<div class="tutorials-caption">
+							<div class="tutorials-caption-heading">Aceptador</div>
+							<div class="tutorials-caption-subheading text-muted">Obtener
+								cuadre contable de cajero aceptador o depósito</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 mb-4">
+					<!-- tutorials item 3-->
+					<div class="tutorials-item">
+						<a class="tutorials-link" data-bs-toggle="modal"
+							href="#tutorialsModal3">
+							<div class="tutorials-hover">
+								<div class="tutorials-hover-content">
+									<i class="fas fa-play fa-3x"></i>
+								</div>
+							</div> <img class="img-fluid"
+							src="assets/img/tutorials/ErroresOperaciones.png" alt="..." />
+						</a>
+						<div class="tutorials-caption">
+							<div class="tutorials-caption-heading">Errores</div>
+							<div class="tutorials-caption-subheading text-muted">Obtener
+								operaciones con errores en un periodo de remesa</div>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+		</div>
+	</section>
+
+	<!-- Equipo-->
+	<section class="page-section bg-light" id="team">
+		<div class="container">
+			<div class="text-center">
+				<h2 class="section-heading text-uppercase">Equipo de desarrollo</h2>
+				<h3 class="section-subheading text-muted">Esta aplicación fue
+					desarrollada por el equipo FBI de ATM, Agentes y autoservicios.</h3>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="team-member">
+						<img class="mx-auto rounded-circle"
+							src="assets/img/team/usuario.png" alt="..." />
+						<h4>Renzo Rojas</h4>
+						<p class="text-muted">Líder del equipo</p>
+						<a class="btn btn-dark btn-social mx-2"
+							href="mailto:renzo.rojas.marquez@bbva.com"
+							aria-label="Correo de Renzo Rojas"><i class="fa-solid fa-at"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="team-member">
+						<img class="mx-auto rounded-circle"
+							src="assets/img/team/usuario.png" alt="..." />
+						<h4>Eli Tarazona</h4>
+						<p class="text-muted">Desarrollador</p>
+						<a class="btn btn-dark btn-social mx-2"
+							href="mailto:eli.tarazona.contractor@bbva.com"
+							aria-label="Correo de Eli Tarazona"><i class="fa-solid fa-at"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="team-member">
+						<img class="mx-auto rounded-circle"
+							src="assets/img/team/usuario.png" alt="..." />
+						<h4>Rodrigo Serrano</h4>
+						<p class="text-muted">Desarrollador</p>
+						<a class="btn btn-dark btn-social mx-2"
+							href="mailto:rodrigo.serrano.vega.contractor@bbva.com"
+							aria-label="Correo de Rodrigo Serrano"><i
+							class="fa-solid fa-at"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-8 mx-auto text-center">
+					<p class="large text-muted">Cualquier comentario, duda,
+						consulta o mejora contactar con algún miembro del equipo a través
+						de sus correos.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Modales de tutorials -->
+	<div class="tutorials-modal modal fade" id="tutorialsModal1"
+		tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-bs-dismiss="modal">
+					<img src="assets/img/close-icon.svg" alt="Close modal" />
+				</div>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<div class="modal-body">
+								<!-- Project details-->
+								<h2 class="text-uppercase">Cajero Dispensador</h2>
+								<p class="item-intro text-muted"></p>
+								<!--<img class="img-fluid d-block mx-auto" src="assets/img/tutorials/1.jpg" alt="..." />-->
+								<video class="img-fluid d-block mx-auto"
+									src="assets/img/tutorials/TutorialCajeroDispensador.mp4"
+									controls></video>
+								<br>
+								<p>Te enseñaremos como obtener las operaciones correctas y
+									con errores, realizadas en un periodo de remesa especifico.
+									Esto resulta muy útil si necesitas comprobar si la suma de
+									todas las operaciones coincide con el importe acumulado antes
+									de desabastecer y abastecer nuevamente el cajero.</p>
+								<button class="btn btn-primary btn-xl text-uppercase"
+									data-bs-dismiss="modal" type="button">
+									<i class="fas fa-xmark me-1"></i> Cerrar
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="tutorials-modal modal fade" id="tutorialsModal2"
+		tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-bs-dismiss="modal">
+					<img src="assets/img/close-icon.svg" alt="Close modal" />
+				</div>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<div class="modal-body">
+								<!-- Project details-->
+								<h2 class="text-uppercase">Cajero Depósito</h2>
+								<p class="item-intro text-muted"></p>
+								<video class="img-fluid d-block mx-auto"
+									src="assets/img/tutorials/TutorialCajeroDeposito.mp4" controls></video>
+								<br>
+								<p>Te enseñaremos como obtener las operaciones correctas y
+									con errores, realizadas en un periodo de remesa especifico.
+									Este resulta muy útil si necesitas comprobar si la suma de
+									todas las operaciones coincide con los importes al desabastecer
+									el cajero.</p>
+								<button class="btn btn-primary btn-xl text-uppercase"
+									data-bs-dismiss="modal" type="button">
+									<i class="fas fa-xmark me-1"></i> Cerrar
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="tutorials-modal modal fade" id="tutorialsModal3"
+		tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="close-modal" data-bs-dismiss="modal">
+					<img src="assets/img/close-icon.svg" alt="Close modal" />
+				</div>
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8">
+							<div class="modal-body">
+								<!-- Project details-->
+								<h2 class="text-uppercase">Errores en Operaciones</h2>
+								<p class="item-intro text-muted"></p>
+								<video class="img-fluid d-block mx-auto"
+									src="assets/img/tutorials/TutorialErrorOperaciones.mp4"
+									controls></video>
+								<br>
+								<p>Te enseñaremos como poder obtener un resumen de las
+									operaciones con errores, realizas en un periodo de remesa
+									especifico. Esto resulta útil si de manera rápida deseas saber
+									si hubo errores de hardware, software o reinicio que
+									interrumpan alguna operación en el cajero.</p>
+								<button class="btn btn-primary btn-xl text-uppercase"
+									data-bs-dismiss="modal" type="button">
+									<i class="fas fa-xmark me-1"></i> Cerrar
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Footer-->
+	<footer th:replace="layout/layout :: footer"></footer>
+</body>
+
+</html>
