@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es" xmlns:th="http://www.thymeleaf.org">
-<head th:replace="layout/layout :: head"></head>
+<head th:replace="~{layout/layout :: head}"></head>
 
 <body id="page-top">
 	<!-- Header -->
-	<header th:replace="layout/layout :: header"></header>
+	<header th:replace="~{layout/layout :: header}"></header>
 	<!-- Masthead-->
 	<header class="masthead">
 		<div class="container">
@@ -309,7 +309,7 @@
 	</div>
 
 	<!-- Footer-->
-	<footer th:replace="layout/layout :: footer"></footer>
+	<footer th:replace="~{layout/layout :: footer}"></footer>
 </body>
 
 </html>
