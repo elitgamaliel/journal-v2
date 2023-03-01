@@ -15,32 +15,40 @@
                     <h2 class="section-heading text-uppercase">ATM</h2>
                     <div class="row">
                         <div class="col-lg-6">
-                            <h4>CAJERO</h4>
+                            <h4 th:text="cajero">CAJERO</h4>
                         </div>
                         <div class="col-lg-6">
-                            <h4>DEPOSITOS</h4>
+                            <h4 th:text="depositos">DEPOSITOS</h4>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <form enctype="multipart/form-data" action="http://localhost/plugins/test">
+        <form method="post" action="/buscar" enctype="multipart/form-data">
             <div class="form-group">
                 <div class="file-loading">
-                    <input id="file-1" type="file" multiple class="file" data-overwrite-initial="false"
+                    <input id="file-1" type="file" name="archivos" multiple class="file" data-overwrite-initial="false"
                         data-min-file-count="2">
                 </div>
             </div>
             <hr>
         </form>
+        <ul class="list-group" th:if="${not #lists.isEmpty(fechas)}">
+            <li class="list-group-item" th:each="fecha : ${fechas}">
+                <input class="form-check-input me-1" type="checkbox" value="" id="checkboxStretched" th:id="'checkboxStretched_' + ${#ids.seq('checkboxStretched')}">
+                <label class="form-check-label stretched-link" th:for="'checkboxStretched_' + ${#ids.seq('checkboxStretched')}" th:text="${fecha}"></label>
+            </li>
+        </ul>        
     </div>
+
     <!-- Footer-->
     <footer th:replace="~{layout/layout :: footer}"></footer>
 </body>
 <script>
     $("#file-1").fileinput({
+        language: 'es',
         theme: 'fa5',
-        uploadUrl: '#', // you must set a valid URL here else you will get an error
+        uploadUrl: '/buscar', // you must set a valid URL here else you will get an error
         allowedFileExtensions: ['jpg', 'png', 'gif', 'txt', 'sql'],
         overwriteInitial: false,
         maxFileSize: 100000,
